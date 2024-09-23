@@ -14,11 +14,11 @@ class Persona {
     }
 
     public datosPersona() : string {
-        return `Datos Personales:\n Nombre completo: ${this.apellido}, ${this.nombre}\n Edad: ${this.edad}\n Domicilio: ${this.domicilio.obtenerDomicio}`
+        return `Datos Personales:\n Nombre completo: ${this.apellido}, ${this.nombre}\n Edad: ${this.edad}\n Domicilio: ${this.domicilio.obtenerDomicio()}`
     }
     
 }
 
 let domicilioCasa = new Domicilio("Av. Siempreviva", 742, "Springfield", "UEA7150");
 let persona1 = new Persona("Simpson", "Homero", 38, domicilioCasa);
-persona1.datosPersona();
+console.log(persona1.datosPersona());
