@@ -18,3 +18,7 @@ class Persona {
     }
     
 }
+
+let domicilioCasa = new Domicilio("Av. Siempreviva", 742, "Springfield", "UEA7150");
+let persona1 = new Persona("Simpson", "Homero", 38, domicilioCasa);
+persona1.datosPersona();
