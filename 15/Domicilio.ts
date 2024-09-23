@@ -12,6 +12,6 @@ export default class Domicilio {
     }
 
     public obtenerDomicio() : string {
-        return `Domicilio: ${this.calle} ${this.numero}, ${this.localidad}, C.P.: ${this.codigoPostal}`
+        return `Domicilio: ${this.calle} ${this.numero}, ${this.localidad}, C.P.: ${this.codigoPostal}`;
     }
 }
