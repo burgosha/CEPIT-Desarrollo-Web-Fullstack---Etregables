@@ -1,8 +1,8 @@
 export default class Vehiculo {
-    private marca : string;
-    private modelo : string;
-    private anio : number;
-    private patente : string;
+    public marca : string;
+    public modelo : string;
+    public anio : number;
+    public patente : string;
 
     public constructor(marca : string, modelo : string, anio : number, patente : string) {
         this.marca = marca;
