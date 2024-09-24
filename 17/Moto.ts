@@ -9,6 +9,6 @@ class Moto extends Vehiculo {
     }
 
     public toString(): string {
-        return `Datos de la moto:\nMarca: ${this.marca}\nModelo: ${this.modelo}\nAño: ${this.anio}\nCilindrada: ${this.cilindrada}\nPatente: ${this.patente}`
+        return `Datos de la moto:\nMarca: ${this.marca}\nModelo: ${this.modelo}\nAño: ${this.anio}\nCilindrada: ${this.cilindrada} CC\nPatente: ${this.patente}`
     }
 }
