@@ -11,4 +11,8 @@ class RegistroAutomor {
         this.vehiculos.push(vehiculo);
         console.log(`Vehiculo agregado. ${vehiculo.toString()}`)
     }
+
+    public buscarVehiculo(patente : string) : Vehiculo | undefined {
+        return this.vehiculos.find(vehiculo => vehiculo.patente === patente);
+    }
 }
