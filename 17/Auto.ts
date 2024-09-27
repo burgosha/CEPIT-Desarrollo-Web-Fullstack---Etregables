@@ -13,4 +13,6 @@ class Auto extends Vehiculo {
     public toString(): string {
         return `Datos del auto:\nMarca: ${this.marca}\nModelo: ${this.modelo}\nAño: ${this.anio}\nTipo: ${this.tipo}\nPuertas: ${this.puertas}\nPatente: ${this.patente}`
     }
+
+    //Esto es un comentario
 }
