@@ -1,18 +1,22 @@
 import Vehiculo from "./Vehiculo";
 
-class Auto extends Vehiculo {
-    private tipo : string
-    private puertas : number;
+export class Auto extends Vehiculo {
+    protected segmento : string // ej. sedan, SUV, 
+    protected puertas : number;
+    protected alarma : boolean;
 
-    public constructor(marca : string, modelo : string, anio : number, patente : string, tipo : string, puertas : number) {
-        super(marca, modelo, anio, patente);
-        this.tipo = tipo;
+    public constructor(marca : string, modelo : string, anio : number, patente : string, color : string , segmento : string, puertas : number, alarma : boolean) {
+        super(marca, modelo, anio, patente, color);
+        this.segmento = segmento;
         this.puertas = puertas;
+        this.alarma = alarma;
+    }
+
+    setAlarma(alarma : boolean) : void {
+        this.alarma = alarma;
     }
 
     public toString(): string {
-        return `Datos del auto:\nMarca: ${this.marca}\nModelo: ${this.modelo}\nAño: ${this.anio}\nTipo: ${this.tipo}\nPuertas: ${this.puertas}\nPatente: ${this.patente}`
+        return `Datos del auto - Marca: ${this.marca} | Modelo: ${this.modelo} | Año: ${this.anio} | Tipo: ${this.segmento} | Puertas: ${this.puertas} | Patente: ${this.patente} | Alarma:${this.alarma ? 'Si' : 'No'} | Color: ${this.color}`
     }
-
-    //Esto es un comentario
 }

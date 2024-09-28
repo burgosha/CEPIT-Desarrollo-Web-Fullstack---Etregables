@@ -1,14 +1,14 @@
 import Vehiculo from "./Vehiculo";
 
-class Camion extends Vehiculo {
+export class Camion extends Vehiculo {
     private carga : number;
 
-    constructor(marca : string, modelo : string, anio : number, patente : string, carga: number) {
-        super(marca, modelo, anio, patente);
+    constructor(marca : string, modelo : string, anio : number, patente : string,  color : string , carga: number) {
+        super(marca, modelo, anio, patente, color);
         this.carga = carga;
     }
 
     public toString(): string {
-        return `Datos de la moto:\nMarca: ${this.marca}\nModelo: ${this.modelo}\nAño: ${this.anio}\nCarga: ${this.carga} CC\nPatente: ${this.patente}`
+        return `Datos de la camion - Marca: ${this.marca} | Modelo: ${this.modelo} | Año: ${this.anio} |Carga: ${this.carga} CC | Patente: ${this.patente} | Color: ${this.color}`
     }
 }
