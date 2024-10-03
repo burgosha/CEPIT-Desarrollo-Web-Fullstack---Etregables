@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    color: hsl(240, 5.9%, 10%);
+}
+
+header {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: hsl(240, 5.9%, 10%);
+}
+.header-nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.header-nombre h1{
+    font-size: 30px;
+    margin: 0;
+}
+.header-nombre p {
+    color: hsl(0, 0%, 67%);
+    margin: 0;
+    font-weight: 500;
+}
+main {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 60px;
+}
+section {
+    margin-bottom: 60px;
+}
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 18px;
+    margin: 0;
+}
+.descripcion {
+    margin-top: 15px;
+    line-height: 25px;
+}
+.descripcion span {
+    font-style: italic;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: hsl(0, 0%, 67%);
+}
+.evento-draganddrop, .evento-onclick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor, .contenedor2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contenedor2 {
+    flex-direction: column;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cuadradointerno {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    cursor: grab;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+}
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: hsl(240, 4.8%, 95.9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+@media (max-width: 940px) {
+    main {
+        padding: 0px 50px;
+    }
+}

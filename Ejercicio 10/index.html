@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-nombre">
+            <h1>ToDo List</h1>
+            <p>Ejercicio 10</p>
+        </div>
+    </header>
+    <main>
+        <!-- ondrag -->
+        <section>
+            <div class="todolist">
+                <div id="mitodolist" class="header-todo">
+                    <h2>Mi Lista de Tareas</h2>
+                    <div class="todocontroles">
+                        <input type="text" id="todoInput" placeholder="Tarea..." >
+                        <span onclick="nuevoElemento()" class="btnAgregar">Agregar</span>
+                    </div>
+                </div>
+                <ul id="todoUl">
+                    <li>Anotarme al gimnasio</li>
+                    <li class="realizada">Entregar ejercicios faltantes</li>
+                    <li>Pagar servicios</li>
+                    <li>Ir al mercado</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+          © 2024 Burgos Hernán Andrés. Todos los derechos reservados.
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
