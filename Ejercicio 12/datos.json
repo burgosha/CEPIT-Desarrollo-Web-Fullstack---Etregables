@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "direccion": "Calle Falsa 123, Buenos Aires",
+      "edad": 70,
+      "dni": "12345678"
+    },
+    {
+      "id": 2,
+      "nombre": "María González",
+      "direccion": "Avenida Siempre Viva 742, Córdoba",
+      "edad": 31,
+      "dni": "37654321"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos López",
+      "direccion": "Calle Principal 456, Rosario",
+      "edad": 51,
+      "dni": "23456789"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana Martínez",
+      "direccion": "Pasaje Sin Nombre 789, Mendoza",
+      "edad": 34,
+      "dni": "34567890"
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Fernández",
+      "direccion": "Ruta 66, Mar del Plata",
+      "edad": 25,
+      "dni": "45678901"
+    }
+  ]
